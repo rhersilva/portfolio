@@ -5,48 +5,56 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Portfólio Renata Silva</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
         <div class="container-fluid">
             <div class="row bg-light">
-                <div class="col-md-12 bg-warning p-5 text-center">
-                    <h1 class="display-5"> Renata Design </h1>
+                <div class="col-md-12 p-5 text-center" id="particles-js">
+                    <h1 class="text-white display-1"> Renata Design </h1>
                 </div>
             </div>
             <div class="row pb-lg-4 pb-md-2 pt-4 justify-content-center"">
                 <div class="col-md-10">
-                    <h4 class="text-muted">
-                        Capas para linkedin
-                    </h4>
+                    <h3>
+                        Capas para Linkedin
+                    </h3>
                 </div>
             </div>
             <div class="row pb-lg-4 pb-md-2 justify-content-center">
-                <div class="col-md-5 shadow-lg bg-white mx-md-4 mx-lg-4 p-2 mb-2 rounded-4">
+                <div class="col-md-5 shadow-sm bg-white mx-md-4 mx-lg-4 p-2 mb-2 rounded-4">
                     <img src="artcapa.jpeg" class="img-fluid rounded-3" alt="Capa de perfil linkedin">
                 </div> 
-                <div class="col-md-5 shadow-lg bg-white p-2 mb-2 rounded-4">
+                <div class="col-md-5 shadow-sm bg-white p-2 mb-2 rounded-4">
                     <img src="artcapa2.jpeg" class="img-fluid rounded-3" alt="Capa de perfil linkedin">
                 </div>
             </div>
             <div class="row justify-content-center mb-3">
-                <div class="col-md-5 shadow-lg bg-white mx-md-4 mx-lg-4 p-2 mb-2 rounded-4">
+                <div class="col-md-5 shadow-sm bg-white mx-md-4 mx-lg-4 p-2 mb-2 rounded-4">
                     <img src="artcapa3.jpeg" class="img-fluid rounded-3" alt="Capa de perfil linkedin">
                 </div> 
-                <div class="col-md-5 shadow-lg bg-white p-2 mb-2 rounded-4">
+                <div class="col-md-5 shadow-sm bg-white p-2 mb-2 rounded-4">
                     <img src="artcapa4.jpeg" class="img-fluid rounded-3" alt="Capa de perfil linkedin">
                 </div>
             </div>
-            <div class="row bg-warning justify-content-center">
+            <div class="row bg-success justify-content-center">
                 <div class="col-md-10 mx-md-4 mx-lg-4 p-3 mb-2 pt-5 rounded-4">
                     <p>
                         <a href="http://linkedin.com/in/renata-raimunda-da-silva-092155119" target="_blank" class="text-white">
-                            <img src="linkedinn.png" height="35" width="35" alt="linkedin">
+                            in
                         </a>
                     </p>
                 </div>
             </div>
         </div>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+        <script src="./particles.js"></script>
+        <script>
+            particlesJS.load('particles-js', './particlesjs-config.json', function() {
+                console.log('callback - particles.js config loaded');
+                let el = document.querySelector(".particles-js-canvas-el"); 
+                el.setAttribute("height", "200px");
+            });
+        </script>
     </body>
 </html>
